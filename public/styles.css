@@ -1,0 +1,80 @@
+body {
+    width: 100%;
+    margin: 0px;
+    height: 100vh;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(231, 227, 227);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.header {
+    background-color: #f5ba13;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    justify-content: flex-start;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-title {
+    margin-left: 1vw;
+}
+
+.noteContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 3px 3px 8px -6px rgba(150,128,150,1);
+    color: black;
+    border-radius: 5px;
+    border: 1px solid rgb(235, 232, 232);
+    margin-top: 5vh;
+    padding: 10px;
+    margin-left: 1vw;
+}
+
+.noteTitle {
+    text-emphasis: bold;
+    font-size: 1rem;
+    margin-bottom: 1vh;
+}
+
+.noteContent {
+    text-emphasis: none;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+}
