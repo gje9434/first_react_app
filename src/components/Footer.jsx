@@ -5,4 +5,4 @@ function Footer() {
     return <footer>Copyright &copy; { year }</footer>
 }
 
-export { Footer };
+export default Footer;
