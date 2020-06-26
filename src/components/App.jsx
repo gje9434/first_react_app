@@ -11,7 +11,7 @@ var App = () => {
     const [notes, setNotes] = useState([]);
 
     var addNote = (title, content) => {
-        setNotes(prevItems => {
+        setNotes(prevNotes => {
             let uniqueId = uuid();
             let newNote = {
                 key: uniqueId,
@@ -19,8 +19,7 @@ var App = () => {
                 title: title,
                 content: content
             }
-            console.log(notes)
-            return[...prevItems, newNote]
+            return[...prevNotes, newNote]
         })
     }
 
