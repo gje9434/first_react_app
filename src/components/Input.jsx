@@ -12,9 +12,19 @@ var Input = (props) => {
 
     return (
     <div className="form">
-        <input onChange={ handleInput } value={title} type="text" name="title" placeholder="TITLE"></input>
-        <input onChange={ handleInput }  value={content} type="text" name="content" placeholder="CONTENT"></input>
-        <button onClick= {() => {
+        <input  className="add-title" 
+            onChange={ handleInput } 
+            value={title} type="text" 
+            name="title" 
+            placeholder="Add title...">
+        </input>
+        <input  className="add-content" 
+            onChange={ handleInput }  
+            value={content} type="text" 
+            name="content" 
+            placeholder="Add content...">
+        </input>
+        <button className="add-note" onClick= {() => {
             props.addItem(title, content);
             setTitle("");
             setContent("")

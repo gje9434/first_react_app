@@ -103,3 +103,45 @@ footer {
     font-size: 0.7rem;
     margin-right: 0px;
 }
+
+.form {
+    background-color: white;
+    display: flex;
+    width: 25vw;
+    height: 15vh;
+    flex-direction: column;
+    box-shadow: 3px 3px 8px -6px rgba(150,128,150,1);
+    color: black;
+    border-radius: 5px;
+    border: 1px solid rgb(235, 232, 232);
+    padding: 10px;
+    margin-bottom: 3vh;
+    overflow-wrap: break-word;
+    margin-top: 3vh;
+}
+
+.add-note {
+    color: #f5ba13;
+    background-color: white;
+    border-style: none;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.add-note:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-style: none;
+}
+
+.add-title {
+    font-weight: bold;
+    max-width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
